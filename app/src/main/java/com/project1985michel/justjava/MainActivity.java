@@ -57,9 +57,18 @@ public class MainActivity extends ActionBarActivity {
      * This method is called when the order button is clicked.
      */
     public void submitOrder(View view) {
-        //int quantity = 2;
+        String priceMessage= ((quantity == 0) ? "   Free!   " : (" "+NumberFormat.getCurrencyInstance().format(quantity*5)+" "));
+        //" "+NumberFormat.getCurrencyInstance().format(number)+" "
+
+//        if(quantity==0)
+//            priceMessage = " Free! ";
+//        else
+//            priceMessage = ""+(quantity * 5);
+
+        displayMessage(priceMessage);
+
         display(quantity);
-        displayPrice(quantity * 5);
+//        displayPrice(quantity * 5);
     }
 
     /**
@@ -77,5 +86,13 @@ public class MainActivity extends ActionBarActivity {
     private void displayPrice(int number) {
         TextView priceTextView = (TextView) findViewById(R.id.price_text_view);
         priceTextView.setText(" "+NumberFormat.getCurrencyInstance().format(number)+" ");
+    }
+
+    /**
+     * This method displays the given text on the screen.
+     */
+    private void displayMessage(String message) {
+        TextView priceTextView = (TextView) findViewById(R.id.price_text_view);
+        priceTextView.setText(message);
     }
 }
