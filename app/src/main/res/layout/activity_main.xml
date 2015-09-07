@@ -29,6 +29,7 @@
             android:text="Whipped cream"
             android:textColor="#FAFAFA"
             android:textSize="16sp"
+            android:button="@drawable/checkbox_custom"
 
              />
 
