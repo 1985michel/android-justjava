@@ -54,10 +54,19 @@ public class MainActivity extends ActionBarActivity {
     }
 
     /**
+     *
+     * @param quantity
+     * @return the price
+     */
+    public int calculatePrice(int quantity){
+        return quantity*5;
+    }
+
+    /**
      * This method is called when the order button is clicked.
      */
     public void submitOrder(View view) {
-        String priceMessage= ((quantity == 0) ? "   Free!   " : (" "+NumberFormat.getCurrencyInstance().format(quantity*5)+" "));
+        String priceMessage= ((quantity == 0) ? "   Free!   " : (" "+NumberFormat.getCurrencyInstance().format(calculatePrice(quantity))+" "));
         //" "+NumberFormat.getCurrencyInstance().format(number)+" "
 
 //        if(quantity==0)
