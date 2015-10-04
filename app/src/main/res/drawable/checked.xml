@@ -10,13 +10,14 @@
     android:shape="rectangle">
 
 
-<gradient android:startColor="#ffff0000" android:endColor="#ff000000" android:angle="270"/>
 
 
-<stroke android:width="4px" android:color="#ffc0c0c0" />
+
+<stroke android:width="3px" android:color="#ffc0c0c0" />
 
 
-<size android:height="20dp" android:width="20dp"/>
+    <size android:height="15dp" android:width="15dp"/>
+    <padding android:right="10dp"></padding>
 
 
     </shape>

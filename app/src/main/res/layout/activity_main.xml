@@ -22,14 +22,27 @@
         android:layout_marginBottom="10dp"
         >
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Toppings: "
+            android:textAllCaps="true"
+            android:textColor="#FAFAFA"
+            android:textSize="18sp"/>
+
         <CheckBox
             android:id="@+id/whipped_cream_checkbox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Whipped cream"
-            android:textColor="#FAFAFA"
+            android:paddingLeft="24dp"
+
             android:textSize="16sp"
-            android:button="@drawable/checkbox_custom"
+            android:background="#BCAAA4"
+
+
+
+
 
              />
 
